@@ -1,0 +1,37 @@
+/*|---------------| COLORS VARIABLES |---------------*/
+:root {
+    --red-flat: #F8475F;
+    --color-fifth: #585858;
+    --color-bg: #F2F2F2;
+}
+
+/*|---------------| RESET |---------------*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
