@@ -9,8 +9,13 @@
         justify-content: space-between;
         align-items: center;
 
+        .btn-mobile {
+            display: none;
+        }
+
         .logo {
             cursor: pointer;
+            min-width: 18.1rem;
         }
 
         .search-form {
@@ -20,13 +25,14 @@
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
+            margin-left: 20px;
             input {
                 position: relative;
                 width: 100%;
-                max-width: 718px;
+                max-width: 71.8rem;
                 height: 2.3rem;
                 border-bottom: 1px solid #7A7A7A;
-                padding-bottom: 5px;
+                padding-bottom: 0.5px;
                 background: transparent;
                 &::placeholder {
                     font-weight: 400;
@@ -38,7 +44,7 @@
 
             button {
                 position: relative;
-                right: 2.7%;
+                left: -18px;
                 padding-bottom: 5px;
                 &:hover {
                     img {
@@ -113,5 +119,57 @@
             }
         }
 
+    }
+
+    @media (max-width: 769px) {
+        .container {
+            flex-wrap: wrap;
+
+            .btn-mobile {
+                display: block;
+            }
+
+            .logo {
+                order: 1;
+            }
+
+            .search-form {
+                order: 3;
+                margin-left: initial;
+            }
+            
+            nav {
+                order: 2;
+            }
+        }
+    }
+
+    @media (max-width: 481px) {
+        .container {
+            .logo {
+                img {
+                    width: 110px;
+                    margin: 0 auto;
+                }
+            }
+            
+            nav {
+                width: auto;
+                .my-account {
+                    display: none;
+                }
+                ul {
+                    align-items: center;
+                }
+            }
+
+            .search-form {
+                height: 4rem;
+                button {
+                    left: 0;
+                    border-bottom: 1px solid #7A7A7A;
+                }
+            }
+        }
     }
 }

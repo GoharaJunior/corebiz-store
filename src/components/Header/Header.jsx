@@ -4,11 +4,15 @@ import Logo from '../../assets/img/corebiz-logo.svg';
 import SearchIcon from '../../assets/img/search-icon.svg';
 import MyAccountIcon from '../../assets/img/my-account-icon.svg';
 import MiniCartIcon from '../../assets/img/minicart-icon.svg';
+import HamburgerIcon from '../../assets/img/hamburger-icon.svg';
 
 export function Header() {
     return (
         <header className="header">
             <div className="container">
+                <a href="" className="btn-mobile">
+                    <img src={HamburgerIcon} alt="Ícone de menu mobile" />
+                </a>
                 <a href="https://www.corebiz.ag/pt/" className="logo" target={'_blank'}>
                     <img src={Logo} alt="Logo da empresa" />
                 </a>
