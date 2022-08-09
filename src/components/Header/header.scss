@@ -84,7 +84,7 @@
                             font-size: 1rem;
                             line-height: 1.4rem;
                             color: #FFFFFF;
-                            background-color: var(--red-flat);
+                            background-color: #F8475F;
                             width: 1.4rem;
                             height: 1.4rem;
                             border-radius: 50%;
@@ -144,7 +144,9 @@
         }
     }
 
-    @media (max-width: 481px) {
+    @media (max-width: 520px) {
+        padding: 7px 0 10px;
+
         .container {
             .logo {
                 img {
@@ -164,7 +166,8 @@
             }
 
             .search-form {
-                height: 4rem;
+                height: 22px;
+                margin-top: 10px;
                 button {
                     left: 0;
                     border-bottom: 1px solid #7A7A7A;
